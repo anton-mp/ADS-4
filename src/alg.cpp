@@ -28,7 +28,7 @@ int countPairs2(int* arr, int len, int value) {
             int rep = index;
             while (rep < len && arr[rep] == dif) {
                 count++;
-                rep++;    
+                rep++;
             }
         }
     }
@@ -41,7 +41,7 @@ int countPairs3(int* arr, int len, int value) {
         if (sum > value) {
             r--;
         } else if (sum < value) {
-            l++;    
+            l++;
         } else if (arr[l] == arr[r]) {
                 int n = r - l + 1;
                 count += n * (n - 1) / 2;
